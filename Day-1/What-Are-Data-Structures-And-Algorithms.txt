@@ -1,0 +1,11 @@
+What is a data structure?
+Named location used to store and organize data.
+An example can be a family tree it stores the hierachy of family relationships.
+(Evan Vang is the Brother of (Anonymous) Vang).
+Another example is an array a collection of elements stored at contigious memory locations.
+
+What is an algorithm?
+A collection of steps to solve a problem.
+Like cooking food, 1. stir up the eggs, 2. heat up the pan, 3. put in the butter, 4. pour in the yolk, you get the idea...
+Another is a linear search. One by one go through the elements to find the desired value. 1. Check first element, 2. Check second element.
+
