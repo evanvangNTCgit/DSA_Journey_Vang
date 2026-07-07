@@ -1,0 +1,15 @@
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\bin\Debug\net10.0\DSA-Day1.exe
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\bin\Debug\net10.0\DSA-Day1.deps.json
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\bin\Debug\net10.0\DSA-Day1.runtimeconfig.json
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\bin\Debug\net10.0\DSA-Day1.dll
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\bin\Debug\net10.0\DSA-Day1.pdb
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.AssemblyInfoInputs.cache
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.AssemblyInfo.cs
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.csproj.CoreCompileInputs.cache
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.sourcelink.json
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.dll
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\refint\DSA-Day1.dll
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.pdb
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\DSA-Day1.genruntimeconfig.cache
+E:\Evan\Source\Repos\DSA_Journey_Vang\Day-1\DSA-Day1\DSA-Day1\obj\Debug\net10.0\ref\DSA-Day1.dll

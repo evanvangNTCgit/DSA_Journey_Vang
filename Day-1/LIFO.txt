@@ -1,0 +1,3 @@
+A stack is a LIFO data structure.
+LIFO stands for last in first out. Like a CD stack or a stack of books.
+Push adds to the top. Pop removes from the top.

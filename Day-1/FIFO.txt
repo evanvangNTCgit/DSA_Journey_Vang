@@ -1,0 +1,6 @@
+FIFO: First in First Out. (Like a line of people)
+
+Example being a Ticket booth, first come first serve.
+First person there gets served then the person behind them.
+
+In coding it is dequeue(remove) and enqueue(add)
