@@ -1,0 +1,5 @@
+Priority Queue is a FIFO data structure. 
+However the difference is that we put it in some sort of order.
+Higher priority gets served first over lower priority.
+
+So you are an ER and need to serve the most life-threatening to least life-threatening patients.

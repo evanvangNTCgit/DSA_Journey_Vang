@@ -1,0 +1,59 @@
+Linked List 
+
+First a brief on arrays, Arrays/array lists, these data structures store elements in a contiguous memory location.
+All elements in the array are stored at a memory address with an index to access a certain element.
+
+So in an alphabet array its A,B,C. A being at index 0, B at 1, so on...
+
+Maybe we skipped D (A,B,C,E). However D should be at index 3, in an array that means we have to shift all the letters after D up one. 
+z has to go up, then y, x, so on.... This is very slow and inefficient. Imagine if we had a million letters.
+
+Linked lists can come in for help here!
+Help with inserting and deleting.
+- A linked list is made of a long chain of nodes
+- The node containing two parts. Data to store and an address to the next node in the line (or a pointer).
+- Linked lists do not have an index in the same way arrays do. However each node contains an adress to where the next node is located.
+- This makes it NON-CONTIGUOUS can be anywhere in your computer memory.
+
+Data | address
+(A, 100 Evan st)
+(B, 200 Evan st)
+(X, 2600 Evan st)
+(C, 300 Evan st)
+
+When inserting now I do not need to shift these elements around.
+If we place in a new node. We take the address in the previous node, then assign address of this node to the new node. 
+Then to keep the linked list going you point the address to in the new node to the next node.
+
+(A, 100 Evan st)
+(B, 190 Evan st) <-
+(X, 2600 Evan st)
+(C, 300 Evan st)
+(BC, 200 Evan st) <-
+
+Deletions are easy aswell.
+To delete we have the previous node point to the one next in line.
+So to remove X we make BC not reference it anymore.
+
+(A, 100 Evan st)
+(B, 190 Evan st) <-
+(C, 300 Evan st)
+(BC, 210 Evan st) <-
+
+WHERE LINKED LISTS ARE INFERIOR TO ARRAYS
+They suck at searching. REMEMBER NO INDEX IN A LINKED LIST.
+So to locate an element. We start from the head (top of the chain/link) and work to the tail (bottom of chain/link).
+
+Causing an O(N) time (linear)
+However insertion and deletion are constant O(1)
+
+Doubly Linked List
+
+Doubly linked list requires more memory to store elements.
+In this doubly linked list you store two addresses not just one.
+
+Previous Address | Data | Next Address
+
+You can traverse the linked list from head to toe or toe to head in reverse/forward fashion.
+Every node is aware of the next and previous node.
+AGAIN TAKES MORE MEMORY THAN A SINGLY LINKED LIST.
