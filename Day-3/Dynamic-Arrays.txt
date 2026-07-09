@@ -1,0 +1,21 @@
+Dynamic Array: An array with a resizable capacity.
+So when another element needs to be added into an array it can increase the capacity to fit another element.
+Unlike a standard pre-fixed array. new Int[4] vs new List<int>
+
+A dynamic array has its own fixed inner static array with a fixed size.
+When this inner static array has reach full capacity, the dynamic array will instantiate a new array with increased capacity.
+Typically the capacity is increase by (capacity)itself times 2. So (Capacity of 5 times 2 = 10)
+
+Dynamic array advantages:
+- Random access of elements is O(1) constant, they are indexed
+- Good locality of reference and data cache utilization
+- Easy to insert/delete at the end.
+
+However remember similar to normal static arrays when deleting/adding something at a random index,
+you require that a portion of other elements must move up/down to accomodate a new element at an index.
+
+Dynamic array disadvantages:
+- Wastes more memory than a linked list, since we need more capacity for elements, however not the full capacity is used...
+- Shifting elements is time consuming O(n) linear
+- Expanding/Shrinking the array is O(n) as well, remember if you need a new capacity you are essentially making a new static array
+with a different capacity.
