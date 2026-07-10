@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-3\\DSA-Day3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5D09A3D-683F-45C0-B3BB-D42CCB76ACB9}|DSA-Day3\\DSA-Day3.csproj|e:\\evan\\source\\repos\\dsa_journey_vang\\day-3\\dsa-day3\\dsa-day3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5D09A3D-683F-45C0-B3BB-D42CCB76ACB9}|DSA-Day3\\DSA-Day3.csproj|solutionrelative:dsa-day3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6467447-9DC4-37ED-6735-33FCD144E595}|DSA-Day3\\DSA-Day3.csproj|e:\\evan\\source\\repos\\dsa_journey_vang\\day-3\\dsa-day3\\dsa-day3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6467447-9DC4-37ED-6735-33FCD144E595}|DSA-Day3\\DSA-Day3.csproj|solutionrelative:dsa-day3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,9 +26,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-3\\DSA-Day3\\DSA-Day3\\Program.cs",
               "RelativeDocumentMoniker": "DSA-Day3\\Program.cs",
-              "ToolTip": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-3\\DSA-Day3\\DSA-Day3\\Program.cs",
-              "RelativeToolTip": "DSA-Day3\\Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAwEIAAAAmAAAAAAAAAA==",
+              "ToolTip": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-3\\DSA-Day3\\DSA-Day3\\Program.cs*",
+              "RelativeToolTip": "DSA-Day3\\Program.cs*",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T15:36:02.302Z",
               "EditorCaption": ""

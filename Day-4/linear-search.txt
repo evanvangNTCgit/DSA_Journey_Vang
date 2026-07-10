@@ -1,0 +1,12 @@
+Linear search.
+Iterate through a collection one element at a time.
+
+O(N) notation.
+Meaning again 100 data points 100 steps (thought it may be less ofc if found early.)
+
+Disadvantage, Slow for large data steps
+
+Advantages:
+- Fast for searching through small to medium data sets
+- Does not need to be sorted
+- Useful for data structured that do not have random access (like a linked list)

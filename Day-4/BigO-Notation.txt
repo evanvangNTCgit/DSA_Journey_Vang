@@ -1,0 +1,63 @@
+Big O Notation "How code slows as data grows"
+
+1. Describes the performance of an algorithm as the amount of data increases
+2. Typically machine independent (since it focuses on the # of steps to completion)
+3. Ignores smaller operations (so O(n+1) becomes O(N))
+
+Examples:
+O(1)
+O(n)
+O(log n)
+O(n^2)
+
+n = Amount of data (like a variable!)
+
+O(n) stands for linear time.
+As the amount of data increases the amount of time to perform an operation increase linearly (1 to 1)
+
+public int sumUp(int amountToAdd){
+
+    int sum = 0;
+    for(int i = 0; i < amountToAdd; i++){
+        sum += i
+    }
+    return sum.
+}
+So notice how if I keep adding up another integer it simply just increase the step along with the amount added.
+10 = 10 steps
+20 = 20 steps... 
+
+---------------------------------------------
+
+O(1) stands for constant time, input size does not matter. Amount of data does not matter. Will be completed in same amount of steps.
+
+public int sumUp(int amountToAdd){
+    
+    int sum = n * (n + 1) / 2;
+    return sum;
+}
+So regardless of what we pass in to the parameter it just runs the same few lines of code (or steps).
+10, 20, 30, 40, DOES NOT MATTER!!
+
+- Note that technically it is o(3) since 3 operations are performed but such a small differece just say o(1)
+-----------------------------------------------------------------
+
+Visualize these as like a graph.
+
+The data is the x axis and the time is the graph.
+
+O(log n) stands for logarithmic time. (Binary search for example.)
+These algorithms take increasingly less time to complete. So as the data size increases, these algorithms become very efficient.
+
+O(n), linear time.
+As the amount of data increases time increases proportionally.
+
+O(n log n) (example quick-sort, merge-sort), quasilinear time.
+Super similar to linear time unless an extremely large data set is used. Thus it curves up a bit faster thin linear time.
+
+O(n^2) stands for quadratic time (bubble-sort, insertion-sort),
+As amount of data increases. Algorithm very very noticably increases.
+So a 1000 data points causes 1,000,000 steps A BIG INCREASE
+
+O(n!) (traveling salesman?) stands for factorial time.
+EXTREMELY SLOW, THE SLOWEST IN THIS BIG O 
