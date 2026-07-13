@@ -1,0 +1,8 @@
+Interpolation Search: An improvement over binary searches. 
+- Best for 'uniformly' distributed data.
+- "Guesses" where a value might be based on calculated probe results.
+- If the probe is incorrect, search area is narrowed, and new probe is calculated.
+
+
+Average case: O(log(log(n)))
+Worse case: O(n)

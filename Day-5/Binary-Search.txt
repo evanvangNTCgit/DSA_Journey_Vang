@@ -1,0 +1,32 @@
+Binary Search: Search algorithm that finds the position of an element in a SORTED ARRAY.
+WHATEVER WE SEARCH THROUGH MUST BE SORTED.
+
+It needs to be sorted because essentially we are going at the half index of the array and seeing
+if at that half is it less or more than the value we wish to search for
+Then chopping off that half if it is more or less than.
+
+Visual example.
+(Want to find 7)
+
+1,2,3,4,5,6,7,8,9,10
+- Start at 5
+- Ok 7 is more than 5
+
+6,7,8,9,10
+- start at 8
+- ok 7 is less than 8
+
+6,7
+- start at 6
+- ok 7 is more than 6
+
+7
+Return the index of this 7
+(6)
+
+
+Runtime complexity
+O(log n), Larger the dataset the more efficient.
+
+In a nutshell
+Array is chopped by half until the value is found to return the index.

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-6\\DSA-Day6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9EDDAB3-CCE3-4C9E-A87B-85E6B089F243}|DSA-Day6\\DSA-Day6.csproj|e:\\evan\\source\\repos\\dsa_journey_vang\\day-6\\dsa-day6\\dsa-day6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9EDDAB3-CCE3-4C9E-A87B-85E6B089F243}|DSA-Day6\\DSA-Day6.csproj|solutionrelative:dsa-day6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-6\\DSA-Day6\\DSA-Day6\\Program.cs",
+              "RelativeDocumentMoniker": "DSA-Day6\\Program.cs",
+              "ToolTip": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-6\\DSA-Day6\\DSA-Day6\\Program.cs",
+              "RelativeToolTip": "DSA-Day6\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T19:33:08.562Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
