@@ -1,0 +1,20 @@
+Sorting algorithm that compares adjacent elements. 
+To check and see if it is in order. 
+Then the next.
+If not in order make a sort.
+This continues until the List is in desired order.
+
+
+5,4,3
+5 gets stored in a 'temp' variable then gets compared to 4.
+Ok 5 is more than 4, move 4 up one. Then put 5 in its place (using temp var)
+Next... 5 is more than 3, so move 3 up one. And put 5 in its place.
+
+4,3,5.
+4 is stored in 'temp'.
+Compare 4 to 3... 4 is more than 3 so move 3 up one.
+Than 4 is put in its place.
+Compare 4 to 5, 5 is more than 4... So nothing happens.
+
+Time complexity is O(N^2)
+Meaning it should really only be used for small data sets.

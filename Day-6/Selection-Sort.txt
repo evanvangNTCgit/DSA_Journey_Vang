@@ -1,0 +1,12 @@
+In selection sort you are looking through the array and finding the 'minimum'
+Until it is finally sorted.
+
+9,1,3.
+
+Start at 9 set it to the 'min' variable.
+Go to one, realize that is smaller than 9 so 1 stored at the 'min' variable.
+Go to three, it is bigger than 1 so nothing happens.
+Now 9 gets stored in a temp variable, 1 (min) is set to the first index. now goes to the index 1 was at.
+
+1,9,3
+
