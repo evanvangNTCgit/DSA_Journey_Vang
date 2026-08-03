@@ -1,0 +1,11 @@
+Insertion Sort:
+Begin at index 1. Move that value to a 'temp' variable.
+Then check element(s) to the left to see if it is a bigger value. If it is... shift it to the right.
+
+6,1,7,4 (1 is in temp, we check 6, 6 > 1, shift 6 to the right, 1 goes in its place)
+1,6,7,4 (7 is in temp, we check 6, 6 < 7, nothing happens, and since we did previous iteration with 6 it can stop here)
+1,6,7,4 (4 is in temp, we see that 7 > 4 and 6 > 4, however 1 < 4, so 7 and 6 can shift to the right, and 4 takes its place, DONE)
+1,4,6,7 FINISHED SORT (started with 6,1,7,4)
+
+O(n^2)
+Quadratic time, meaning as it grows gets heavily inefficient. Only good for smaller data sets
