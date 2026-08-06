@@ -1,0 +1,7 @@
+Recursion:
+A recursive method calls itself. This can substitute for iteration.
+This is typically used in advanced sorting algorithms and navigating trees.
+
+Advantages: Easier to read/write & easier to debug
+Disadvantages: slower (sometimes) & uses more memory
+

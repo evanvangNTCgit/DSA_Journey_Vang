@@ -1,0 +1,2 @@
+Quicksort: Can sort an array utilizing a pivot (at the beginning, end, or middle).
+Uses this pivot to find its resting place.
