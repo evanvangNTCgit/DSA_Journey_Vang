@@ -1,0 +1,14 @@
+Hashtable: Collection of key/value pairs.
+Each of these pairs are known as an 'entry'.
+
+First is the key than the value.
+(100, "Evan") Student Id (key) | Student Name (value)
+
+If two items are you wish to insert into a hash table have the same key.
+They will be stored at the same key, however now within a linked list.
+
+(100, "Evan") (100, "Eli")
+So then if I wanted to specifically find Eli or Evan. 
+We first go to the index of 100 and search linearly for either Eli or Evan.
+
+IDEALLY EACH ENTRY HAS THEIR OWN INDEX. But of course it could happen for entries to have the same key.
