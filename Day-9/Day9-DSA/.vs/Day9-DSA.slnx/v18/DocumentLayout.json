@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-9\\Day9-DSA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F68F6CB-61FB-445A-84EA-420726A59A3F}|Day9-DSA\\Day9-DSA.csproj|e:\\evan\\source\\repos\\dsa_journey_vang\\day-9\\day9-dsa\\day9-dsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F68F6CB-61FB-445A-84EA-420726A59A3F}|Day9-DSA\\Day9-DSA.csproj|solutionrelative:day9-dsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2F73A80-78D8-3790-3068-24A827D78B9B}|Day9-DSA\\Day9-DSA.csproj|e:\\evan\\source\\repos\\dsa_journey_vang\\day-9\\day9-dsa\\day9-dsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2F73A80-78D8-3790-3068-24A827D78B9B}|Day9-DSA\\Day9-DSA.csproj|solutionrelative:day9-dsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,10 +24,14 @@
               "RelativeDocumentMoniker": "Day9-DSA\\Program.cs",
               "ToolTip": "E:\\Evan\\Source\\Repos\\DSA_Journey_Vang\\Day-9\\Day9-DSA\\Day9-DSA\\Program.cs",
               "RelativeToolTip": "Day9-DSA\\Program.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAswGIAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAqwGIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-17T22:03:44.349Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

@@ -1,0 +1,19 @@
+Graph is a non-linear aggregation of nodes and edges.
+These nodes can contain a piece of data.
+Edges are the connections between nodes.
+
+There are undirected and directed graphs.
+An undirected graph example is Facebook, each node represents a user and a user can be friends with other users!
+The friendship can be represented with an edge.
+This connection between the two friends(nodes) is known as an adjacency.
+
+In a directed graph, contains edges that link one node to another BUT ARE ONE WAY.
+So you can go from Node A to C but not go back on that same edge.
+HOWEVER if Node C connects its edge to A then you can go back on Node C's edge.
+
+Street maps are an example of a directed graph each node can is possible destination.
+The edges can be one-way streets.
+
+Two popular ways to represent a graph.
+An adjacency matrix and an adjacency list.
+In an adjacency matrix you could create a 2d array or 2d array-list.
