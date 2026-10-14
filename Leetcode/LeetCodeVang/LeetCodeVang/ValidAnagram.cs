@@ -22,6 +22,9 @@
          */
         public static bool IsAnagram(string s, string t)
         {
+            if (s.Length != t.Length)
+                return false;
+
             Dictionary<char, int> keyValuePairs = new Dictionary<char, int>();
 
             for (int i = 0; i < s.Length; i++)
