@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCodeVang.LengthOfLastWord</StartupObject>
+    <StartupObject>LeetCodeVang.CountMonobitInteger</StartupObject>
   </PropertyGroup>
 
 </Project>
