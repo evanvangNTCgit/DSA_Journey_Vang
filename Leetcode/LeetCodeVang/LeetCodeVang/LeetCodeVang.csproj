@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCodeVang.RearrangeStringToAvoidCharPair</StartupObject>
+    <StartupObject>LeetCodeVang.LengthOfLastWord</StartupObject>
   </PropertyGroup>
 
 </Project>
