@@ -59,7 +59,7 @@ namespace LeetCodeVang
             {
                 int numberToCheckInDict = target - nums[i];
                 if (keyValuePairs.ContainsKey(numberToCheckInDict))
-                    return [i, keyValuePairs[numberToCheckInDict]];
+                    return [keyValuePairs[numberToCheckInDict], i];
 
                 if (!keyValuePairs.ContainsKey(nums[i]))
                 keyValuePairs.Add(nums[i], i);
