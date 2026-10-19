@@ -6,7 +6,7 @@ namespace LeetCodeVang
     {
         public static void Main(string[] args)
         {
-            var test = IsPalindrome("0P");
+            var test = IsPalindrome(".,");
             Console.WriteLine(test);
         }
 
@@ -23,35 +23,30 @@ namespace LeetCodeVang
          */
         public static bool IsPalindrome(string s)
         {
-            StringBuilder sb= new StringBuilder();
-            for (int i = 0; i < s.Length; i++)
-            {
-                if (IsASCIILetterOrNum(s[i]))
-                {
-                    sb.Append(s[i]);
-                }
-            }
-
-            s = sb.ToString().ToUpper();
+            s = s.ToUpper();
 
             // Two pointers
             int left = 0;
-            int right = sb.Length - 1;
+            int right = s.Length - 1;
 
             while (left < right)
             {
-                while (s[left] == ' ')
+                while (!IsASCIILetterOrNum(s[left]))
                 {
                     if ((left + 1) <= (s.Length - 1))
                         left++;
+                    else
+                        break;
                 }
-                while (s[right] == ' ')
+                while (!IsASCIILetterOrNum(s[right]))
                 {
                     if ((right - 1) >= 0)
                         right--;
+                    else
+                        break;
                 }
 
-                if (s[left] != s[right])
+                if ((s[left]) != s[right] && IsASCIILetterOrNum(s[left]) && IsASCIILetterOrNum(s[right]))
                 {
                     return false;
                 }
@@ -73,7 +68,7 @@ namespace LeetCodeVang
                 return true;
 
             // Numberic letters aswell
-            if (int.TryParse(c.ToString(), out int result))
+            if ('0' <= c && c <= '9')
                 return true;
 
             return false;
