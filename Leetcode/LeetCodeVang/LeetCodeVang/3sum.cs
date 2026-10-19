@@ -87,5 +87,66 @@
 
             return threeSumList;
         }
+
+        // Submission for leet code:
+        public static IList<IList<int>> ThreeSumSol(int[] nums)
+        {
+            List<IList<int>> threeSumList = new();
+            // Sort the array.
+            for (int i = 0; i < nums.Length; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] > nums[j])
+                    {
+                        var temp = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = temp;
+                    }
+                }
+            }
+
+
+            // Need to go through 
+            // [-4,-1,-1,0,1,2]
+            // -2
+            int l = 0;
+            int r = nums.Length - 1;
+
+            HashSet<string> alreadyAddedSet = new HashSet<string>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                l = i + 1;
+                r = nums.Length - 1;
+                while (l < r)
+                {
+                    if (nums[i] + nums[l] + nums[r] < 0)
+                    {
+                        l++;
+                    }
+                    else if (nums[i] + nums[l] + nums[r] > 0)
+                    {
+                        r--;
+                    }
+                    else if (nums[i] + nums[l] + nums[r] == 0)
+                    {
+                        var toAdd = new List<int> { nums[l], nums[r], nums[i] };
+
+                        // Unique hash key.
+                        string hashKey = $"{nums[l]}{nums[r]}{nums[i]}";
+
+                        if (!alreadyAddedSet.Contains(hashKey))
+                        {
+                            threeSumList.Add(toAdd);
+                            alreadyAddedSet.Add(hashKey);
+                        }
+                        l++;
+                        r--;
+                    }
+                }
+            }
+
+            return threeSumList;
+        }
     }
 }
