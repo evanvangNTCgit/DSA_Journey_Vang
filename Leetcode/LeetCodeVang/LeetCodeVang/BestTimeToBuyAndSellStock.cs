@@ -32,32 +32,55 @@ namespace LeetCodeVang
          */
         public static int MaxProfit(int[] prices)
         {
+            //// base case(s)
+            //if (prices.Length == 1)
+            //    return 0;
+
+            //// First we start at first index.
+            //// Then keep slowly going up.
+
+            //// Once we find a number lowest than currently start of slide window slide it to their.
+
+            //int maxProfit = 0;
+
+            //int windowStart = 0;
+            //int windowEnd = 1;
+            //for (int i = 0; i < prices.Length; i++)
+            //{
+            //    if (prices[windowStart] > prices[i])
+            //    {
+            //        windowStart = i;
+            //        windowEnd = windowStart + 1;
+            //    } else
+            //    {
+            //        int profit = prices[windowEnd] - prices[windowStart];
+            //        maxProfit = profit > maxProfit ? profit : maxProfit;
+
+            //        if(windowEnd + 1 < prices.Length)
+            //        windowEnd++;
+            //    }
+            //}
+
+            //return maxProfit;
+
+            // The improved version I saw on leet code:
             // base case(s)
             if (prices.Length == 1)
                 return 0;
 
-            // First we start at first index.
-            // Then keep slowly going up.
-
-            // Once we find a number lowest than currently start of slide window slide it to their.
+            int minPrice = int.MaxValue;
 
             int maxProfit = 0;
-
-            int windowStart = 0;
-            int windowEnd = 1;
             for (int i = 0; i < prices.Length; i++)
             {
-                if (prices[windowStart] > prices[i])
+                if (prices[i] < minPrice)
                 {
-                    windowStart = i;
-                    windowEnd = windowStart + 1;
-                } else
-                {
-                    int profit = prices[windowEnd] - prices[windowStart];
-                    maxProfit = profit > maxProfit ? profit : maxProfit;
+                    minPrice = prices[i];
+                }
 
-                    if(windowEnd + 1 < prices.Length)
-                    windowEnd++;
+                if (prices[i] - minPrice > maxProfit)
+                {
+                    maxProfit = prices[i] - minPrice;
                 }
             }
 
