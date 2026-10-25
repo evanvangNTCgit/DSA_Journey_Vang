@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCodeVang.SearchInRotatedSortedArray</StartupObject>
+    <StartupObject>LeetCodeVang.ReverseLinkedList</StartupObject>
   </PropertyGroup>
 
 </Project>
