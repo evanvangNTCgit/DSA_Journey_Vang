@@ -33,68 +33,87 @@
             if (t.Length > s.Length)
                 return "";
 
-            Dictionary<char, int> charsDict = new Dictionary<char, int>();
-            Dictionary<char, int> charsReq = new Dictionary<char, int>();
+            Dictionary<char, int> CharSeenDict = new Dictionary<char, int>();
+            Dictionary<char, int> charsRequired = new Dictionary<char, int>();
 
             // populate the dict. of req. characters
+            // These are the characters required and their frequencies
             for (int i = 0; i < t.Length; i++)
             {
-                if (charsReq.ContainsKey(t[i]))
-                    charsReq[t[i]]++;
+                if (charsRequired.ContainsKey(t[i]))
+                    charsRequired[t[i]]++;
                 else
-                    charsReq.Add(t[i], 1);
+                    charsRequired.Add(t[i], 1);
             }
 
-            int left = 0;
+            // This is an integer storing the amount of characters satisifed 
+            // When we meet the required character and frequency, increment satisfied.
+            // Should match the key count in charRequired dictionary
+            // meaning the substring met the requirement of having each char in T.
             int satisfied = 0;
-            string currSmallestSbStr = "";
-            // ADOBECODEBANC
-            // ABC
+            int left = 0;
+            string SmallestSbStr = "";
+
             for (int i = 0; i < s.Length; i++)
             {
-                if (charsReq.ContainsKey(s[i]))
+                if (charsRequired.ContainsKey(s[i]))
                 {
-                    if (charsDict.Count == 0)
+                    // We start left on the first character seen that is required in T.
+                    if (CharSeenDict.Count == 0)
                         left = i;
                     char rightC = s[i];
-                    if (!charsDict.ContainsKey(rightC))
+
+                    bool HaveSeenThisRequiredChar = CharSeenDict.ContainsKey(rightC);
+                    if (!HaveSeenThisRequiredChar)
                     {
-                        charsDict.Add(rightC, 1);
+                        CharSeenDict.Add(rightC, 1);
                     }
                     else
                     {
-                        charsDict[rightC]++;
+                        CharSeenDict[rightC]++;
                     }
-                    if (charsDict[rightC] == charsReq[rightC])
+
+                    /*
+                     * So for EX. We found the 2 T's in S that was required in T.
+                     */
+                    bool MeetFrequencyRequirementForRequiredChar = CharSeenDict[rightC] == charsRequired[rightC];
+                    if (MeetFrequencyRequirementForRequiredChar)
                     {
                         satisfied++;
                     }
 
-                    // ADOBECODEBANC
-                    // ABC
-                    while (!charsReq.ContainsKey(s[left]) || charsDict[s[left]] > charsReq[s[left]])
+                    // Checking if we exceed the frequency requirement for a character
+                    // Or the character on the left is not in T.
+                    bool CanIncrementLeft = !charsRequired.ContainsKey(s[left]) || CharSeenDict[s[left]] > charsRequired[s[left]];
+                    while (CanIncrementLeft)
                     {
-                        if (charsReq.ContainsKey(s[left]) && charsDict[s[left]] > charsReq[s[left]])
+                        // So we do have more than enough of a required char from T.
+                        bool ExceedCharFrequency = charsRequired.ContainsKey(s[left]) && CharSeenDict[s[left]] > charsRequired[s[left]];
+                        if (ExceedCharFrequency)
                         {
-                            charsDict[s[left]]--;
+                            CharSeenDict[s[left]]--;
                         }
 
                         left++;
 
-                        if (charsReq.ContainsKey(s[left]) && charsDict[s[left]] <= charsReq[s[left]])
+                        // Is s at left index required for a new substring?
+                        // It is if we do not exceed the required frequency for that character.
+                        bool NotExceedRequiredCharFrequency = charsRequired.ContainsKey(s[left]) && CharSeenDict[s[left]] <= charsRequired[s[left]];
+                        if (NotExceedRequiredCharFrequency)
                         {
+                            // Now left starts at the required char for the next substring.
                             break;
                         }
                     }
 
-                    if (satisfied == charsReq.Count)
+                    if (satisfied == charsRequired.Count)
                     {
                         string subStr = s.Substring(left, (i + 1) - left);
-                        currSmallestSbStr = subStr.Length < currSmallestSbStr.Length || currSmallestSbStr == "" ? subStr : currSmallestSbStr;
+                        SmallestSbStr = subStr.Length < SmallestSbStr.Length || SmallestSbStr == "" ? subStr : SmallestSbStr;
                     }
                 }
             }
-            return currSmallestSbStr;
+            return SmallestSbStr;
         }
 
         // From reading a leetcode solution
