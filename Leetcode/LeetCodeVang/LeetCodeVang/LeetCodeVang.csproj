@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCodeVang.ReorderLinkedList</StartupObject>
+    <StartupObject>LeetCodeVang.RemoveNthNodeFromEndOfList</StartupObject>
   </PropertyGroup>
 
 </Project>
