@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>LeetCodeVang.Maximum_DepthOfBinaryTree</StartupObject>
+    <StartupObject>LeetCodeVang.SameBinaryTree</StartupObject>
   </PropertyGroup>
 
 </Project>
