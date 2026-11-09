@@ -23,34 +23,32 @@ namespace LeetCodeVang
          */
         public static int KthSmallest(TreeNode root, int k)
         {
-            PriorityQueue<int, int> pQ = new PriorityQueue<int, int>();
+            // DFS solution:
+            // A BST is inorder traversion so (left -> node -> right) so its narually sorted.
+            // So we can traverse the tree inorder, count nodes as we visit them.
+            // And stop as soon as we visit Kth smallest node.
+            int[] tmp = new int[2];
+            tmp[0] = k;
+            DFS(root, tmp);
+            return tmp[1];
+        }
 
-            Queue<TreeNode> q = new Queue<TreeNode>();
-            q.Enqueue(root);
+        // DFS helper function
+        private static void DFS(TreeNode node, int[] tmp)
+        {
+            if (node is null) return;
 
-            while(q.Count > 0) 
+            DFS(node.left, tmp);
+            if (tmp[0] == 0) return;
+
+            tmp[0]--;
+            if (tmp[0] == 0)
             {
-                TreeNode node = q.Dequeue();
-
-                pQ.Enqueue(node.val, node.val);
-
-                if(node.left is not null)
-                    q.Enqueue(node.left);
-                if (node.right is not null)
-                    q.Enqueue(node.right);
+                tmp[1] = node.val;
+                return;
             }
 
-            // Now to get the Kth smallest value.
-            for(int i = 1;  i <= k; i++)
-            {
-                if(i == k)
-                {
-                    return pQ.Dequeue();
-                }
-                pQ.Dequeue();
-            }
-
-            return -1;
+            DFS(node.right, tmp);
         }
 
         // Class Definition:
